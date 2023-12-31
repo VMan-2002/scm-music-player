@@ -201,6 +201,14 @@ var	playback = null,
 		//repeat one start again, otherwise next song
 		if(repeatMode()==2) start();
 		else next();
+	},
+
+	pageCommunicate = {
+		playing:false,
+		time:0.0,
+		name:"",
+		url:"",
+		sound:null
 	};
 		
 	return {
@@ -229,6 +237,8 @@ var	playback = null,
 		next:next, 
 		previous:previous,
 		changeRepeatMode:changeRepeatMode,
-		toggleShuffle:toggleShuffle
+		toggleShuffle:toggleShuffle,
+
+		pageCommunicate:pagecommunicate
 	};
 });
