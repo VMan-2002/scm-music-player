@@ -208,7 +208,8 @@ var	playback = null,
 		time:0.0,
 		name:"",
 		url:"",
-		sound:null
+		sound:null,
+		available:false
 	};
 		
 	return {
