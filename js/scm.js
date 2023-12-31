@@ -204,12 +204,12 @@ var	playback = null,
 	},
 
 	pageCommunicate = {
-		playing:false,
-		time:0.0,
-		name:"",
-		url:"",
-		sound:null,
-		available:false
+		playing:false, //whether song is playing right now.
+		time:0.0, //how much time in the song has passed.
+		length:0.0, //how much time there is in the song.
+		name:"", //the "song title".
+		url:"", //the "song url".
+		available:false //whether or not pagecommunicate is available for use by the page.
 	};
 		
 	return {
